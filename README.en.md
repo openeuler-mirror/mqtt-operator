@@ -1,16 +1,20 @@
 # mqtt-operator
 
 #### Description
-Mqtt Operator is to manage Mqtt service instances deployed on the Kubernetes cluster. It is built using the Operator SDK, which is part of the Operator Framework.
+The mqtt operator is built using Kubebuilder. Currently, it supports the creation and deletion of mqtt proxy clusters, complete node lifecycle management, and is exposed to users in the form of a Service.
+Currently, it supports deploying mqtt operators through YAML, and in the future, it will support deployment in the form of Helm.
 
 #### Software Architecture
 Software architecture description
 
 #### Installation
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
+Deploying the mqtt proxy cluster using YAML
+1. Deploy CRD related files
+Kubectl apply - f mqtt proxy crd.yaml
+2. Deploy mqtt operator
+Kubectl apply - f mqtt operator.yaml
+3. Deploy the mqtt proxy cluster
+Kubectl apply - f mqtt proxy cr-yaml
 
 #### Instructions
 
@@ -25,12 +29,19 @@ Software architecture description
 3.  Commit your code
 4.  Create Pull Request
 
+## License
 
-#### Gitee Feature
+Copyright (c) 2023. China Mobile(SuZhou)Software Technology Co.,Ltd. All rights reserved.
 
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+ seecScanner is licensed under Mulan PSL v2.
+
+You can use this software according to the terms and conditions of the Mulan PSL v2.
+You may obtain a copy of Mulan PSL v2 at:
+
+ http://license.coscl.org.cn/MulanPSL2
+
+THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND,
+EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT,
+MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
+See the Mulan PSL v2 for more details.
+
