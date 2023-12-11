@@ -7,15 +7,18 @@ mqtt-operator使用Kubebuilder构建，目前mqtt-operator已支持mqtt-proxy集
 #### 软件架构
 软件架构说明
 
-
+![mqtt-operator](docs/pictures/mqtt-operator.png)
 #### 安装教程
 
-使用YAML部署mqtt-proxy集群
-1、部署 CRD 相关文件
-kubectl apply -f mqtt-proxy-crd.yaml
-2、部署mqtt-operator
-kubectl apply -f mqtt-operator.yaml
-3、部署mqtt-proxy集群
+使用YAML部署mqtt-proxy集群  
+
+1、部署 CRD 相关文件  
+kubectl apply -f mqtt-proxy-crd.yaml  
+
+2、部署mqtt-operator  
+kubectl apply -f mqtt-operator.yaml  
+
+3、部署mqtt-proxy集群  
 kubectl apply -f mqtt-proxy-cr.yaml
 
 #### 使用说明
