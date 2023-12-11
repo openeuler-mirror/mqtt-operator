@@ -6,15 +6,15 @@ Currently, it supports deploying mqtt operators through YAML, and in the future,
 
 #### Software Architecture
 Software architecture description
-
+![输入图片说明](docs/pictures/mqtt-operator.png)
 #### Installation
 Deploying the mqtt proxy cluster using YAML
-1. Deploy CRD related files
-Kubectl apply - f mqtt proxy crd.yaml
-2. Deploy mqtt operator
-Kubectl apply - f mqtt operator.yaml
-3. Deploy the mqtt proxy cluster
-Kubectl apply - f mqtt proxy cr-yaml
+1. Deploy CRD related files  
+Kubectl apply - f mqtt proxy crd.yaml  
+2. Deploy mqtt operator  
+Kubectl apply - f mqtt operator.yaml  
+3. Deploy the mqtt proxy cluster  
+Kubectl apply - f mqtt proxy cr-yaml  
 
 #### Instructions
 
